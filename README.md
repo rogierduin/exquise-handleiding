@@ -63,3 +63,5 @@ De artikelen staan in `public/index.html` (voor de pagina) en `api/kb.json` (voo
 Schermafbeeldingen zitten nog niet in deze versie. Elk artikel linkt naar de originele pagina. Zodra Vertimart de afbeeldingen aanlevert, kunnen ze per artikel worden opgenomen.
 
 
+
+
