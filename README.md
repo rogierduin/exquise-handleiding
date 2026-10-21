@@ -7,7 +7,7 @@ public/index.html   de handleiding (statisch)
 api/chat.js         chatfunctie (serverless, Node 18+)
 api/kb.json         artikeltekst voor de chat
 server.js           alternatief: eigen Node-server / lokaal testen
-vercel.json         instellingen voor Vercel
+vercel.json         instellingen voor Vercel 
 ```
 
 ## 1. Anthropic API-sleutel regelen
