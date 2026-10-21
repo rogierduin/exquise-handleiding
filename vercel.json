@@ -1,10 +1,37 @@
+
 {
-  "outputDirectory": "public",
-  "functions": { "api/chat.js": { "maxDuration": 60, "includeFiles": "api/kb.json" } },
-  "headers": [
-    { "source": "/(.*)", "headers": [
-      { "key": "X-Content-Type-Options", "value": "nosniff" },
-      { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
-    ] }
+  "builds": [
+    {
+      "src": "chat.js",
+      "use": "@vercel/node",
+      "config": {
+        "maxDuration": 60,
+        "includeFiles": [
+          "kb.json"
+        ]
+      }
+    },
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "strict-origin-when-cross-origin"
+      },
+      "continue": true
+    },
+    {
+      "src": "/api/chat",
+      "dest": "/chat.js"
+    },
+    {
+      "src": "/",
+      "dest": "/index.html"
+    }
   ]
 }
