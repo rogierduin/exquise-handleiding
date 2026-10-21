@@ -61,3 +61,5 @@ Open daarna http://localhost:3000.
 De artikelen staan in `public/index.html` (voor de pagina) en `api/kb.json` (voor de chat). Wijzigt de handleiding, dan genereert BONANA beide bestanden opnieuw uit de bron en zet je ze over de oude heen. Daarna volgt een nieuwe deploy; bij Vercel gebeurt dat automatisch bij een push naar GitHub.
 
 Schermafbeeldingen zitten nog niet in deze versie. Elk artikel linkt naar de originele pagina. Zodra Vertimart de afbeeldingen aanlevert, kunnen ze per artikel worden opgenomen.
+
+
